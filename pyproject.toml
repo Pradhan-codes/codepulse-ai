@@ -8,7 +8,9 @@ version = "0.1.0"
 description = "AI-powered developer workflow analytics tool"
 readme = "README.md"
 requires-python = ">=3.10"
-dependencies = []
+dependencies = [
+    "pywin32>=306; sys_platform == 'win32'",
+]
 
 [project.optional-dependencies]
 dev = [
