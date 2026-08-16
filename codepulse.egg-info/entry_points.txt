@@ -1,0 +1,2 @@
+[console_scripts]
+codepulse = codepulse.main:main

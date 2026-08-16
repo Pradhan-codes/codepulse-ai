@@ -1,3 +1,12 @@
+Metadata-Version: 2.4
+Name: codepulse
+Version: 0.1.0
+Summary: AI-powered developer workflow analytics tool
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0.0; extra == "dev"
+
 # CodePulse AI
 
 AI-powered developer workflow analytics tool designed to help developers understand and optimize their coding flow.
