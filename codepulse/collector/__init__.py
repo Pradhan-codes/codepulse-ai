@@ -1,4 +1,4 @@
-"""Activity collection and Windows sensor modules."""
+"""Activity collection and sensor modules."""
 
 from codepulse.collector.aggregator import HeartbeatAggregator
 from codepulse.collector.classifier import (
@@ -6,6 +6,14 @@ from codepulse.collector.classifier import (
     Category,
     ClassificationResult,
     classify,
+)
+from codepulse.collector.git_sensor import (
+    GitCommit,
+    GitSensor,
+    get_current_branch,
+    get_recent_commits,
+    get_repo_name,
+    is_git_repository,
 )
 from codepulse.collector.idle_sensor import (
     IdleSensor,
@@ -24,12 +32,18 @@ __all__ = [
     "ActivityCollectorService",
     "Category",
     "ClassificationResult",
+    "GitCommit",
+    "GitSensor",
     "HeartbeatAggregator",
     "IdleSensor",
     "WindowObservation",
     "WindowSensor",
     "classify",
     "get_active_window",
+    "get_current_branch",
     "get_idle_seconds",
+    "get_recent_commits",
+    "get_repo_name",
+    "is_git_repository",
     "is_idle",
 ]
