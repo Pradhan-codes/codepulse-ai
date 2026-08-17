@@ -12,6 +12,7 @@ from codepulse.collector.idle_sensor import (
     get_idle_seconds,
     is_idle,
 )
+from codepulse.collector.service import ActivityCollectorService
 from codepulse.collector.window_sensor import (
     WindowObservation,
     WindowSensor,
@@ -20,6 +21,7 @@ from codepulse.collector.window_sensor import (
 
 __all__ = [
     "ActivityClassifier",
+    "ActivityCollectorService",
     "Category",
     "ClassificationResult",
     "HeartbeatAggregator",
